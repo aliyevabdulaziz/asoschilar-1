@@ -628,18 +628,7 @@
 
 
 
-		<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwr6iw02YnGBNiGLYLDvL9ziPdcuMzw7dmOc9-_o5oXRUOkaw593wumKHeslkfTcfPn/exec'
-  const form = document.forms['asoschilar']
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => response.text()) // yoki .json()
-  .then(result => console.log('Server javobi:', result))
-  .catch(error => console.error('Error!', error.message))
-
-  })
 </script>
 	</body>
 </html>
