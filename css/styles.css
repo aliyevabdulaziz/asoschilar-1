@@ -175,6 +175,43 @@ body {
 	height: auto;
 }
 
+/* LOGO SECTION */
+.logo-section {
+	padding: 26px 0;
+	background: #f2f2f2;
+	overflow-x: hidden;
+}
+
+.logo-section__container {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	align-items: center;
+	gap: 24px;
+}
+
+.logo-section__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: box-shadow 0.2s, background 0.2s;
+}
+
+.logo-section__item svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	opacity: 0.9;
+	transition: opacity 0.2s, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	will-change: transform;
+}
+
+.logo-section__item:hover svg,
+.logo-section__item:focus svg {
+	opacity: 1;
+	transform: scale(1.07);
+}
+
 /* ----------------------------- */
 /* Responsive Styles */
 /* ----------------------------- */
@@ -275,6 +312,21 @@ body {
 
 	.hero__img-wrapper {
 		max-width: 250px;
+	}
+
+	/* LOGO SECTION */
+	.logo-section {
+		padding: 24px 0;
+	}
+
+	.logo-section__container {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 40px;
+	}
+
+	/* Faqat birinchi 3 ta logo-section__item ko‘rinsin, qolgani yashirilsin */
+	.logo-section__item:nth-child(n + 4) {
+		display: none;
 	}
 }
 
