@@ -349,6 +349,7 @@ body {
 	width: 100%;
 	text-align: center;
 	margin-bottom: 64px;
+	margin-right: auto;margin-left: auto;
 }
 
 .qadriyat__top-list {
@@ -1368,6 +1369,7 @@ input::placeholder {
 		width: 100%;
 		margin-bottom: 46px;
 		text-align: start;
+		margin-left: 0;
 	}
 
 	.qadriyat__container{
