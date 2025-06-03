@@ -418,6 +418,8 @@ body {
 	height: 48px;
 	margin-bottom: 3.2rem;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .qadriyat__item-title {
@@ -505,7 +507,7 @@ body {
 	max-width: 100%;
 	height: auto;
 	border-radius: 0.5rem;
-	margin-bottom: 1rem;
+	margin-bottom: 12px;
 }
 
 .splide__title {
@@ -1000,6 +1002,11 @@ input::placeholder {
 	transform: translateX(3px);
 }
 
+
+.nonne{
+	display: none;
+}
+
 /* ----------------------------- */
 /* Responsive Styles */
 /* ----------------------------- */
@@ -1030,7 +1037,7 @@ input::placeholder {
 	}
 	.services__content {
 		flex-direction: column;
-		gap: 32px;
+		gap: 24px;
 		align-items: stretch;
 	}
 	.services__intro {
@@ -1123,10 +1130,6 @@ input::placeholder {
 		max-width: 1050px;
 	}
 
-	.qadriyat__top-list {
-		max-width: 170px;
-		padding: 6px 14px;
-	}
 
 	.splide__inner {
 		padding: 0;
@@ -1164,6 +1167,10 @@ input::placeholder {
 		line-height: 1.6;
 		font-size: 16px;
 	}
+
+#image-slider{
+	padding: 0;
+}
 
 		    .stats-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1308,6 +1315,11 @@ input::placeholder {
 		align-items: start;
 	}
 
+	.site__top{
+		text-align-last: left;
+		margin-bottom: 24px;
+	}
+
 
 	.hero__info {
 		max-width: 100%;
@@ -1338,8 +1350,7 @@ input::placeholder {
 		font-size: 20px;
 	}
 	.services__card {
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding: 24px 0;
 	}
 	.services__icon {
 		margin-right: 12px;
@@ -1356,18 +1367,47 @@ input::placeholder {
 
 
 	.form-group{
-		margin-top: 16px;
+		margin-bottom: 16px;
 	}
 
+	.form-group:last-child{
+		margin-bottom: 24px;
+	}
+
+	.nonne{
+  display: inline;
+	}
+
+	.testimonial-card{
+		padding: 24px 0;
+	}
+
+	.form-container{
+		padding: 16px;
+	}
+
+
+	.header-badge{
+		margin-bottom: 12px;
+	}
+
+	.section-title-2{
+		font-size: 20px;
+		margin-bottom: 24px;
+	}
 
 				.qadriyat {
-		padding-top: 4rem;
-		padding-bottom: 4rem;
+		padding: 120px 0 60px 0;
 	}
+
+.qadriyat__top-list{
+	margin-bottom: 12px;
+}
+
 
 	.qadriyat__top {
 		width: 100%;
-		margin-bottom: 46px;
+		margin-bottom: 24px;
 		text-align: start;
 		margin-left: 0;
 	}
@@ -1389,17 +1429,18 @@ input::placeholder {
 	}
 
 	.qadriyat__top-title {
-		font-size: 1.8rem;
+		font-size: 20px;
 	}
 
 	.qadriyat__list {
-		gap: 10px;
-		margin-bottom: 30px;
+		gap: 16px;
+		margin-bottom: 24px;
 		flex-direction: column;
 	}
 
 	.responsive{
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 }
 
@@ -1434,7 +1475,7 @@ input::placeholder {
 	}
 
 	.qadriyat__item-title {
-		font-size: 16px;
+		font-size: 20px;
 	}
 
 	.qadriyat__item-text {
@@ -1443,11 +1484,11 @@ input::placeholder {
 
 
 	.konsultatsiya {
-		padding: 20px 0;
+		padding: 60px 0 80px;
 	}
 
 .testimonials-section{
-	padding: 30px 0;
+	padding: 60px 0;
 }
 
 	.qadriyat__top-text {
@@ -1467,22 +1508,22 @@ input::placeholder {
     .stats-grid {
         grid-template-columns: 1fr;
         gap: 16px;
-        margin-bottom: 48px;
+        margin-bottom: 38px;
     }
 
     .section-title {
         font-size: 24px;
-        margin-bottom: 40px;
+        margin-bottom: 24px;
 				text-align: left;
     }
 
     .stat-card {
-        padding: 24px 20px;
+        padding: 24px;
     }
 
     .stat-number {
         font-size: 24px;
-        margin-bottom: 12px;
+        margin-bottom: 8px;
     }
 
     .stat-description {
@@ -1528,6 +1569,10 @@ input::placeholder {
 	}
 
 
+	.splide__slide{
+		padding: 0;
+	}
+
 
 	.customer-info{
 		align-items: start;
@@ -1572,12 +1617,8 @@ input::placeholder {
 
 	.splide__slide {
 		max-width: 100%;
-		padding: 30px;
 	}
 
-	.splide__title {
-		font-size: 20px;
-	}
 
 	.splide__text {
 		font-size: 16px;
@@ -1603,11 +1644,10 @@ input::placeholder {
 
 	   .konsultatsiya-container {
         flex-direction: column;
-        gap: 20px;
+        gap: 32px;
     }
 
-    .left-section {
-        padding: 20px 0;
+    .left-section {padding: 0;
     }
 
     .title {
@@ -1720,12 +1760,9 @@ input::placeholder {
 
 	.splide__slide {
 		max-width: 100%;
-		padding: 10px;
 	}
 
-	.splide__title {
-		font-size: 16px;
-	}
+
 
 	.splide__text {
 		font-size: 12px;
@@ -1740,7 +1777,7 @@ input::placeholder {
 	}
 
 	.testimonial-card {
-		padding: 10px 0;
+		padding: 24px 0;
 	}
 
 	.avatar-image{
