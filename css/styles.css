@@ -31,6 +31,9 @@ body {
 	font-size: 16px;
 	line-height: 1.5;
 	color: var(--text-color);
+	background-image: url("../images/bg.webp");
+	background-position: center center;
+	background-size: contain;
 }
 
 .container {
@@ -110,8 +113,8 @@ body {
 }
 
 .btn {
-	padding: 8px 16px;
-	font-weight: 500;
+	padding: 10px 24px;
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.7;
 	color: var(--white-color);
@@ -344,15 +347,8 @@ body {
 .qadriyat__top {
 	max-width: 236px;
 	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 16px;
 	text-align: center;
 	margin-bottom: 64px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
 }
 
 .qadriyat__top-list {
@@ -543,6 +539,10 @@ body {
 
 
 
+.qadriyat__container{
+	text-align: center;
+}
+
 
 
 /* static */
@@ -572,7 +572,7 @@ body {
 
 /* Stat card */
 .stat-card {
-    background-color: #FFFFFF;
+	background: linear-gradient(102.43deg, #FEFEFE 16.88%, #F9F9F9 104.88%);
     border-radius: 16px;
     padding: 32px 24px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -691,7 +691,7 @@ margin-bottom: 20px;
     line-height: 1.5;
     font-style: normal;
     position: relative;
-		margin-right: 8px;
+
 }
 
 
@@ -728,7 +728,7 @@ margin-bottom: 20px;
 }
 
 .customer-position {
-    font-size: 14px;
+    font-size: 16px;
     color: #6B7280;
     line-height: 1.4;
 }
@@ -748,6 +748,7 @@ margin-bottom: 20px;
     border-radius: 8px;
     transition: all 0.2s ease;
 		align-items: center;
+		margin-top: 24px;
 }
 
 .show-more-btn:hover {
@@ -796,7 +797,7 @@ margin-bottom: 20px;
     gap: 8px;
     background-color: #f3f4f6;
     padding: 8px 16px;
-    border-radius: 20px;
+    border-radius: 8px;
     font-size: 14px;
     color: #4b5563;
     margin-bottom: 24px;
@@ -1099,7 +1100,7 @@ input::placeholder {
 	}
 
 	.qadriyat__item-title {
-		font-size: 2rem;
+		font-size: 20px;
 		line-height: 28px;
 	}
 
@@ -1186,6 +1187,7 @@ input::placeholder {
 		.section-header {
     position: static;
 		align-items: center;
+		height: auto;
 		}
 }
 
@@ -1305,6 +1307,7 @@ input::placeholder {
 		align-items: start;
 	}
 
+
 	.hero__info {
 		max-width: 100%;
 	}
@@ -1334,14 +1337,11 @@ input::placeholder {
 		font-size: 20px;
 	}
 	.services__card {
-		flex-direction: column;
-		align-items: flex-start;
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
 	.services__icon {
-		margin-bottom: 12px;
-		margin-right: 0;
+		margin-right: 12px;
 		width: 44px;
 		height: 44px;
 	}
@@ -1354,17 +1354,31 @@ input::placeholder {
 	}
 
 
+	.form-group{
+		margin-top: 16px;
+	}
+
+
 				.qadriyat {
 		padding-top: 4rem;
 		padding-bottom: 4rem;
 	}
 
 	.qadriyat__top {
-		max-width: 160px;
 		width: 100%;
 		margin-bottom: 46px;
+		text-align: start;
 	}
 
+	.qadriyat__container{
+	text-align: left;
+}
+
+
+.show-more-section{
+	margin-left: auto;
+	margin-right: auto;
+}
 
 
 	.qadriyat__top-text {
@@ -1397,9 +1411,9 @@ input::placeholder {
 }
 
 	.qadriyat__item {
-		padding: 1.8rem;
-		border-radius: 2rem;
-		text-align: center;
+		padding: 16px;
+		border-radius: 20px;
+		text-align: start;
 		display: flex;
 		flex-direction: column;
 		max-width: 100%;
@@ -1407,9 +1421,6 @@ input::placeholder {
 
 	.qadriyat__img-wrapper {
 		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 	}
 
 	.qadriyat__item-img {
@@ -1417,7 +1428,7 @@ input::placeholder {
 		border-radius: 8px;
 		width: 40px;
 		height: 40px;
-		margin-bottom: 2.8rem;
+		margin-bottom: 16px;
 	}
 
 	.qadriyat__item-title {
@@ -1460,6 +1471,7 @@ input::placeholder {
     .section-title {
         font-size: 24px;
         margin-bottom: 40px;
+				text-align: left;
     }
 
     .stat-card {
@@ -1511,6 +1523,12 @@ input::placeholder {
 		margin-bottom: 0;
 		width: 150px;
 		height: 40px;
+	}
+
+
+
+	.customer-info{
+		align-items: start;
 	}
 }
 
