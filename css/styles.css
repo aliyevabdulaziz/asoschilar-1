@@ -175,6 +175,7 @@ body {
 
 .hero__btn {
 	display: inline-block;
+	padding: 8px 16px;
 }
 
 /* Rasm qismi */
@@ -283,9 +284,7 @@ body {
 	transition: box-shadow 0.2s, transform 0.2s;
 }
 
-.hero__btn{
-	padding: 10px 24px;
-}
+
 
 .services__card:not(:last-child) {
 	border-bottom: 1px solid #e5e7eb;
@@ -374,7 +373,6 @@ body {
 
 .qadriyat__top-item img {
 	margin-bottom: -2px;
-	margin-right: 10px;
 }
 
 .qadriyat__top-text {
@@ -534,6 +532,7 @@ body {
 .splide__inner{
 	border:none;
 	box-shadow: none;
+	padding: 0;
 }
 
 .site__top{
@@ -681,7 +680,7 @@ margin-bottom: 20px;
 
 /* Testimonial content */
 .testimonial-content {
-    margin-bottom: 24px;
+    margin-bottom: 0;
 }
 
 .quote-icon {
@@ -716,7 +715,6 @@ margin-bottom: 20px;
     border-radius: 20px;
     object-fit: cover;
     border: 2px solid #F3F4F6;
-		margin-right: 10px;
 }
 
 .customer-details {
@@ -985,6 +983,9 @@ input::placeholder {
 	color: #333;
 }
 
+	.sbnm{
+		padding: 10px 24px;
+	}
 
 .footer-links a:focus,
 .contact-item a:focus {
@@ -1364,7 +1365,13 @@ input::placeholder {
 	.services__list {
 		font-size: 14px;
 	}
+	.testimonial-content{
+		margin: 0;
+	}
 
+	.testimonials-grid{
+		gap: 16px;
+	}
 
 	.form-group{
 		margin-bottom: 16px;
@@ -1387,8 +1394,16 @@ input::placeholder {
 	}
 
 
+	.hero__btn{
+		padding: 8px 12px;
+	}
+
 	.header-badge{
 		margin-bottom: 12px;
+	}
+
+	.sbnm{
+		padding: 14px 24px;
 	}
 
 	.section-title-2{
@@ -1540,6 +1555,10 @@ input::placeholder {
 
 		.testimonial-text{
      font-size: 18px;
+		}
+
+		.customer-info{
+			gap: 12px;
 		}
 
 
